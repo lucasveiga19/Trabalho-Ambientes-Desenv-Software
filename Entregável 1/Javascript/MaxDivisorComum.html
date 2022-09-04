@@ -1,0 +1,20 @@
+<script>
+
+// Máximo divisor comum: O máximo divisor comum (mdc) de dois inteiros a, b é o maior número inteiro que divide a e b.
+
+var a = prompt("Informe o valor de A");
+var b = prompt("Informe o valor de B");
+
+function mdc(a, b) {
+    while (b !== 0) {
+        var r = a % b;
+        a = b;
+        b = r;
+    }
+    return a;
+}
+
+var resultado = mdc(a,b);
+console.log("O MDC dos valores "+a+" e "+b+" é: "+resultado);
+
+</script>

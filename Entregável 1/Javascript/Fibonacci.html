@@ -1,0 +1,20 @@
+<script>
+
+// Fibonacci: onde N > 1. Os primeiros termos são: 0, 1, 1, 2, 3, 5, 8, 13 …. Cada termo, além dos dois primeiros, é derivado da soma de seus dois antecessores mais próximos.
+
+var entrada = prompt("Informe a quantidade de números da sequência:");
+
+var termo1 = 0;
+var termo2 = 1;
+var termo3;
+
+console.log(termo1+", "+termo2);
+
+for(i=3; i<=entrada; i++){
+    termo3 = termo1+termo2;
+    console.log(", "+termo3);
+    termo1 = termo2;
+    termo2 = termo3;
+}
+
+</script>
